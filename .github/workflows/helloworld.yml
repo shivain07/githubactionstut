@@ -6,6 +6,7 @@ on:
     branches:
       - master
       - production
+      - main
 
 jobs:
   hello_word: 
@@ -13,3 +14,6 @@ jobs:
     steps:
         - name: "Print hello world"
           run: echo "hello world"
+
+        - name: "Print date"
+          run: echo date
