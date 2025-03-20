@@ -1,4 +1,5 @@
 name: "Multi event pipeline"
+run-name: "Multi event pipeline run "
 
 on:
   push: #Event:whenever a push is made to the repository on main branch
