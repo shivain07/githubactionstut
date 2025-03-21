@@ -1,19 +1,8 @@
-name: "Hello world workflow"
-
-# Triggers workflow when push to master or production branch
-on:
-  push:
-    branches:
-      - master
-      - production
-      - main
-
+name: Github Actions Demo
+run-name: ${{github.actor}} is testing
+on: [push]
 jobs:
-  hello_word: 
+  Explore-Github-actions:
     runs-on: ubuntu-latest
     steps:
-        - name: "Print hello world"
-          run: echo "hello world"
-
-        - name: "Print date"
-          run: echo date
+      - run : echo "My first gitub action. trigerred by ${{github.event_name}} event"
