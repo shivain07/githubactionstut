@@ -6,7 +6,7 @@ on:
     branches:
       - main
       - dev
-  pull_request: # Event: whenever a pull request is made to the repository
+  pull_request: # Event: whenever a pull request is made to the repository but not if pull request is merged
     types: [opened, synchronize, reopened, ready_for_review]
     branches:
       - main
